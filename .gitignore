@@ -1,0 +1,8 @@
+bundle
+tags
+*~
+*.swp
+.VimballRecord
+view
+.netrwhist
+backups
