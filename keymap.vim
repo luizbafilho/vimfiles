@@ -19,8 +19,8 @@ vnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 
 " Saving and buffer stuff
-nmap <leader><ESC> :q!<CR>
-nmap <leader>q :wqa!<CR>
+nmap <leader><ESC> :wqa!<CR>
+nmap <leader>q :q!<CR>
 nmap <leader>w :w!<CR>
 
 " Switch between / delete buffers
@@ -87,4 +87,16 @@ nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
 
+" Fix commom typos
+if has("user_commands")
+    command! -bang -nargs=? -complete=file E e<bang> <args>
+    command! -bang -nargs=? -complete=file W w<bang> <args>
+    command! -bang -nargs=? -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=? -complete=file WQ wq<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
 

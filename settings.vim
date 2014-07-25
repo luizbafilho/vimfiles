@@ -12,9 +12,14 @@ if has("gui_running")
     set guioptions-=b " no scrollbar on the bottom
     set guioptions=aiA
     set mouse=v
+
+    if has("gui_gtk2")
+      set guifont=Ubuntu\ Mono\ 12
+    elseif has("gui_macvim")
+      set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+    endif
 endif
 
-set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
 
 " ========= NERDTree =================
 let NERDTreeIgnore = ['\.pyc$']
