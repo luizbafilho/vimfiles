@@ -52,6 +52,7 @@ Bundle "klen/python-mode"
 " =============================================
 Bundle "rking/ag.vim"
 Bundle "Raimondi/delimitMate"
+Bundle "tpope/vim-fugitive"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "tomtom/tcomment_vim.git"
 Bundle "terryma/vim-multiple-cursors"
