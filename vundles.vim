@@ -50,8 +50,8 @@ Bundle "klen/python-mode"
 " =============================================
 " Vim Improvements
 " =============================================
+Bundle "rking/ag.vim"
 Bundle "Raimondi/delimitMate"
-Bundle "Shougo/neocomplete.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "tomtom/tcomment_vim.git"
 Bundle "terryma/vim-multiple-cursors"

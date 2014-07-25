@@ -14,7 +14,7 @@ if has("gui_running")
     set mouse=v
 
     if has("gui_gtk2")
-      set guifont=Ubuntu\ Mono\ 12
+      set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     elseif has("gui_macvim")
       set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
     endif
@@ -27,4 +27,4 @@ let NERDTreeIgnore = ['\.pyc$']
 " ========= Vim Airline ===============
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
+set laststatus=2

@@ -15,6 +15,12 @@ nmap <Space> /
 nnoremap / /\v
 vnoremap / /\v
 
+" Ag Search
+nmap <leader>a :Ag
+" Rotating among results
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
+
 " Clear search
 nnoremap <leader><space> :noh<cr>
 
