@@ -1,7 +1,12 @@
 " ========= Appearance ================
 set t_Co=256
-syntax on
-colorscheme monokai
+
+if !has("gui_running")
+   let g:gruvbox_italic=0
+endif
+
+set background=dark
+colorscheme gruvbox
 
 if has("gui_running")
     set guioptions-=T " no toolbar
