@@ -14,11 +14,12 @@ if has("gui_running")
     set mouse=v
 endif
 
+set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+
 " ========= NERDTree =================
 let NERDTreeIgnore = ['\.pyc$']
 
 " ========= Vim Airline ===============
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
 

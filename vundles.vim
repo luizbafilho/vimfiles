@@ -55,8 +55,10 @@ Bundle "Shougo/neocomplete.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "tomtom/tcomment_vim.git"
 Bundle "terryma/vim-multiple-cursors"
+Bundle "tomtom/tlib_vim"
 Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "tpope/vim-surround.git"
+Bundle "sickill/vim-pasta"
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

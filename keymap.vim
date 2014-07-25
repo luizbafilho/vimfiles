@@ -69,7 +69,7 @@ vmap ,{ c{<C-R>"}<ESC>
 
 map ,` ysiw`
 
-map <D-/> :TComment<CR>
+map <leader>co :TComment<CR>
 imap <D-/> <Esc>:TComment<CR>i
 
 " ==============================
