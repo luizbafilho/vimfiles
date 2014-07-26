@@ -20,7 +20,7 @@ if has("gui_running")
 
     if has("gui_gtk2")
       set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
-    elseif has("gui_macvim")
+    else
       set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
     endif
 endif
@@ -33,3 +33,17 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+" ======== Folding ====================
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
+" ========= Trailing ==================
+autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+autocmd FileType python set sw=4 sts=4 et
+autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
+autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
+autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
+

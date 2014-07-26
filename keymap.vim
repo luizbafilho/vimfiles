@@ -106,3 +106,6 @@ if has("user_commands")
     command! -bang Qa qa<bang>
 endif
 
+" Faster scroll
+nnoremap <silent> <c-f> 5<c-e>
+nnoremap <silent> <c-d> 5<c-y>
