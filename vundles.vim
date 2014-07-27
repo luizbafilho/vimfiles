@@ -59,9 +59,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "tpope/vim-surround.git"
 Bundle "sickill/vim-pasta"
-Bundle "Valloric/YouCompleteMe"
 Bundle "SirVer/ultisnips"
-Bundle 'ervandew/supertab'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

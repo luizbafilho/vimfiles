@@ -47,13 +47,3 @@ autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
-" ========= Autocompletion + Snippets ==
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
