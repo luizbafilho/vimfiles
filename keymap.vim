@@ -35,7 +35,7 @@ nmap <leader>w :w!<CR>
 " Switch between / delete buffers
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
-nmap <leader>d :bd<CR>
+nmap <leader>d :BD<CR>
 nmap <leader>D :bufdo bd<CR>
 
 " " NERDtree

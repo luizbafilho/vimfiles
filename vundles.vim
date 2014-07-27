@@ -49,6 +49,7 @@ Bundle "klen/python-mode"
 " =============================================
 " Vim Improvements
 " =============================================
+Bundle "vim-scripts/bufkill.vim"
 Bundle "rking/ag.vim"
 Bundle "Raimondi/delimitMate"
 Bundle "tpope/vim-fugitive"
