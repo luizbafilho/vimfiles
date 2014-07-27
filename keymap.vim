@@ -15,6 +15,9 @@ nmap <Space> /
 nnoremap / /\v
 vnoremap / /\v
 
+" Insert blank line in normal mode
+nmap <CR> o<Esc>
+
 " Ag Search
 nmap <leader>a :Ag
 " Rotating among results
