@@ -50,7 +50,6 @@ Bundle "klen/python-mode"
 " Vim Improvements
 " =============================================
 Bundle "vim-scripts/bufkill.vim"
-Bundle "rking/ag.vim"
 Bundle "Raimondi/delimitMate"
 Bundle "tpope/vim-fugitive"
 Bundle "briandoll/change-inside-surroundings.vim.git"
@@ -61,6 +60,12 @@ Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "tpope/vim-surround.git"
 Bundle "sickill/vim-pasta"
 Bundle "SirVer/ultisnips"
+
+" ============================================
+" Search
+" ===========================================
+Bundle "Lokaltog/vim-easymotion"
+Bundle "rking/ag.vim"
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

@@ -47,3 +47,13 @@ autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
+" ======= Syntastic ==================
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby'],'passive_filetypes': ['python'] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+" ======= Python-mode ================
+let g:pymode_lint = 0
+let g:pymode_lint_on_write = 0
+let g:pymode_lint_unmodified = 0
+let g:pymode_rope = 0
+
