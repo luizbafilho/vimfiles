@@ -57,3 +57,7 @@ let g:pymode_lint_on_write = 0
 let g:pymode_lint_unmodified = 0
 let g:pymode_rope = 0
 
+" ======= EasyMotion ================
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+
