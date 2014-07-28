@@ -39,10 +39,10 @@ nmap <leader>d :BD<CR>
 nmap <leader>D :bufdo bd<CR>
 
 " " NERDtree
-nmap <silent> <leader>p :NERDTreeToggle<cr>%
+nmap <silent> <leader>e :NERDTreeToggle<cr>%
 
 " Ctrlp.vim
-let g:ctrlp_map = '<leader>o'
+let g:ctrlp_map = '<leader>t'
 let g:ctrlp_working_path_mode = 'ra'
 
 " ,# Surround a word with #{ruby interpolation}

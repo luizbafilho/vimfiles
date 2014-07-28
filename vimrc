@@ -93,6 +93,7 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*/target/*
 set wildignore+=*.class
+set wildignore+=*.pyc
 
 "
 " ================ Scrolling ========================
