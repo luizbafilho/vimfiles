@@ -15,7 +15,7 @@ if has("gui_running")
     set guioptions-=R " no scrollbar on the right
     set guioptions-=l " no scrollbar on the left
     set guioptions-=b " no scrollbar on the bottom
-    set guioptions=aiA
+    set guioptions-=L
     set mouse=v
 
     if has("gui_gtk2")
