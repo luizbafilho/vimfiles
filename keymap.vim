@@ -33,13 +33,13 @@ nmap <leader>q :q!<CR>
 nmap <leader>w :w!<CR>
 
 " Switch between / delete buffers
-noremap <tab> :bn<CR>
+noremap <c-tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 nmap <leader>d :BD<CR>
 nmap <leader>D :bufdo bd<CR>
 
 " " NERDtree
-nmap <silent> <leader>e :NERDTreeToggle<cr>%
+nmap <silent> <leader>m :NERDTreeToggle<cr>%
 
 " Ctrlp.vim
 let g:ctrlp_map = '<leader>t'
@@ -112,3 +112,6 @@ endif
 " Faster scroll
 nnoremap <silent> <c-f> 5<c-e>
 nnoremap <silent> <c-d> 5<c-y>
+
+" Copy line
+nmap çç yyp

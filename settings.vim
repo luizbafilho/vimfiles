@@ -16,7 +16,7 @@ if has("gui_running")
     set guioptions-=l " no scrollbar on the left
     set guioptions-=b " no scrollbar on the bottom
     set guioptions-=L
-    set mouse=v
+    set mouse=a
 
     if has("gui_gtk2")
       set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
