@@ -2,7 +2,6 @@
 " Leader key
 " ----------
 let mapleader = ","
-let maplocalleader = "."
 
 imap jk <ESC>
 nnoremap ; :

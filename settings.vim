@@ -25,7 +25,6 @@ if has("gui_running")
     endif
 endif
 
-
 " ========= NERDTree =================
 let NERDTreeIgnore = ['\.pyc$']
 
