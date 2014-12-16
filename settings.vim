@@ -60,3 +60,5 @@ let g:pymode_rope = 0
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
+" ====== YankRing ===================
+nnoremap <silent> <F11> :YRShow<CR>

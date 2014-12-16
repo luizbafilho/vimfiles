@@ -32,20 +32,14 @@ Bundle "jistr/vim-nerdtree-tabs.git"
 Bundle "scrooloose/nerdtree.git"
 Bundle "kien/ctrlp.vim"
 Bundle 'vim-scripts/ctags.vim'
-Bundle 'Valloric/YouCompleteMe'
 " =============================================
 " Languages
 " =============================================
 Bundle "pangloss/vim-javascript"
-" Bundle "othree/javascript-libraries-syntax.vim"
-" Bundle "itspriddle/vim-jquery.git"
-" Bundle "jtratner/vim-flavored-markdown.git"
-" Bundle "kchmck/vim-coffee-script"
-" Bundle "scrooloose/syntastic.git"
-" Bundle "nelstrom/vim-markdown-preview"
+Bundle "itspriddle/vim-jquery.git"
+Bundle "scrooloose/syntastic.git"
 Bundle "skwp/vim-html-escape"
 Bundle "honza/vim-snippets"
-" Bundle "klen/python-mode"
 Bundle "burnettk/vim-angular"
 
 " =============================================
@@ -63,6 +57,7 @@ Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "tpope/vim-surround.git"
 Bundle "sickill/vim-pasta"
 Bundle "SirVer/ultisnips"
+Bundle "vim-scripts/YankRing.vim"
 
 " ============================================
 " Search
