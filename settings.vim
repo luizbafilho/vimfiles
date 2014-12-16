@@ -62,3 +62,11 @@ nmap t <Plug>(easymotion-t2)
 
 " ====== YankRing ===================
 nnoremap <silent> <F11> :YRShow<CR>
+
+" ======= Vim Rspec =================
+" " RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "! vagrant ssh -c 'cd /vagrant/ast && bundle exec rspec {spec}'"
