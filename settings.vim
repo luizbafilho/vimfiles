@@ -21,7 +21,7 @@ if has("gui_running")
     if has("gui_gtk2")
       set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     else
-      set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h14
+      set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h17
     endif
 endif
 
@@ -61,7 +61,7 @@ nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
 " ====== YankRing ===================
-nnoremap <silent> <F11> :YRShow<CR>
+nmap <Leader>c :YRShow<CR>
 
 " ======= Vim Rspec =================
 " " RSpec.vim mappings
@@ -70,3 +70,13 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "! vagrant ssh -c 'cd /vagrant/ast && bundle exec rspec {spec}'"
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"

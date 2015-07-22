@@ -31,6 +31,7 @@ Bundle "sickill/vim-monokai"
 Bundle "jistr/vim-nerdtree-tabs.git"
 Bundle "scrooloose/nerdtree.git"
 Bundle "kien/ctrlp.vim"
+Bundle "rizzatti/dash.vim"
 Bundle 'vim-scripts/ctags.vim'
 " =============================================
 " Languages
@@ -41,6 +42,7 @@ Bundle "scrooloose/syntastic.git"
 Bundle "skwp/vim-html-escape"
 Bundle "honza/vim-snippets"
 Bundle "burnettk/vim-angular"
+Bundle "elixir-lang/vim-elixir"
 
 " =============================================
 " Vim Improvements
@@ -58,6 +60,8 @@ Bundle "tpope/vim-surround.git"
 Bundle "sickill/vim-pasta"
 Bundle "SirVer/ultisnips"
 Bundle "vim-scripts/YankRing.vim"
+Bundle "Valloric/YouCompleteMe"
+Bundle "ervandew/supertab"
 
 " ============================================
 " Search

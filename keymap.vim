@@ -119,3 +119,12 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
+
+inoremap II <Esc>I
+inoremap AA <Esc>A
+inoremap OO <Esc>O
+inoremap JJ <Esc>o
+
+" Dash
+nmap <silent> <leader>f <Plug>DashSearch
+
