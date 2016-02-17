@@ -6,7 +6,7 @@ if !has("gui_running")
 endif
 
 set background=dark
-colorscheme gruvbox
+colorscheme monokai
 
 if has("gui_running")
     set guioptions-=T " no toolbar
@@ -83,3 +83,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " CTRL P
 let g:ctrlp_custom_ignore = 'deps\|_build'
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
