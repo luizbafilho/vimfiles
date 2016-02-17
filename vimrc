@@ -16,7 +16,6 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set t_vb=""
-set cursorline
 "
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -37,9 +36,9 @@ so ~/.vim/keymap.vim
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim
 " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
+" if filereadable(expand("~/.vim/vundles.vim"))
+  so ~/.vim/plugs.vim
+" endif
 
 " ================ Turn Off Swap Files ==============
 

@@ -6,7 +6,9 @@ if !has("gui_running")
 endif
 
 set background=dark
-colorscheme gruvbox
+colorscheme monokai
+set mouse=a
+set clipboard=unnamed
 
 if has("gui_running")
     set guioptions-=T " no toolbar
@@ -16,7 +18,6 @@ if has("gui_running")
     set guioptions-=l " no scrollbar on the left
     set guioptions-=b " no scrollbar on the bottom
     set guioptions-=L
-    set mouse=a
 
     if has("gui_gtk2")
       set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
@@ -50,11 +51,6 @@ autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby'],'passive_filetypes': ['python'] }
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
-" ======= Python-mode ================
-let g:pymode_lint = 0
-let g:pymode_lint_on_write = 0
-let g:pymode_lint_unmodified = 0
-let g:pymode_rope = 0
 
 " ======= EasyMotion ================
 nmap s <Plug>(easymotion-s2)
@@ -62,14 +58,6 @@ nmap t <Plug>(easymotion-t2)
 
 " ====== YankRing ===================
 nmap <Leader>c :YRShow<CR>
-
-" ======= Vim Rspec =================
-" " RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = "! vagrant ssh -c 'cd /vagrant/ast && bundle exec rspec {spec}'"
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
