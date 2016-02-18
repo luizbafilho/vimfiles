@@ -8,32 +8,20 @@ These are the new Codegram vimfiles!
 
 If you trust me, do this:
 
-    rm -fR ~/.vim && git clone https://github.com/codegram/vimfiles.git ~/.vim && rm ~/.vimrc && ln -s ~/.vim/vimrc ~/.vimrc && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle && vim +BundleInstall +qa! && cd ~./vim/bundle/vimproc.vim && make && clear && echo "Done! :)"
+    git clone https://github.com/luizbafilho/vimfiles.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && vim +PlugInstall +qa! && echo "Done! :)"
 
 ### Manual way
 
 Clone this repo:
 
-    $ git clone https://github.com/codegram/vimfiles.git ~/.vim
+    $ git clone https://github.com/luizbafilho/vimfiles.git ~/.vim
     $ rm ~/.vimrc && ln -s ~/.vim/vimrc ~/.vimrc
 
-Install [Vundle](https://github.com/gmarik/vundle):
-
-    $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-Set up your `~/vimrc.local` with your custom plugins, themes, for example:
-
-    " Color theme
-    Bundle 'sjl/badwolf'
-    colorscheme badwolf
 
 Open up Vim, and issue this command:
 
-    :BundleInstall
+    :PlugInstall
 
-Now compile the vimproc extension:
-
-    cd ~/.vim/bundle/vimproc.vim && make
 
 TA-DA! Everything's done!
 
