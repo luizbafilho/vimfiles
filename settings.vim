@@ -22,7 +22,7 @@ if has("gui_running")
     if has("gui_gtk2")
       set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
     else
-      set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h17
+      set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h15
     endif
 endif
 
@@ -71,3 +71,19 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " CTRL P
 let g:ctrlp_custom_ignore = 'deps\|_build'
+
+" Vim Go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+
+let NERDTreeMapOpenVSplit='v'
+
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+set shell=/bin/bash
