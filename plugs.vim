@@ -18,7 +18,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/syntastic'
-
+Plug 'majutsushi/tagbar'
 " ====== Languages ==========
 Plug 'fatih/vim-go'
 " Add plugins to &runtimepath
