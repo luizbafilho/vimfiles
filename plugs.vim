@@ -19,6 +19,11 @@ Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'airblade/vim-gitgutter'
+
 " ====== Languages ==========
 Plug 'fatih/vim-go'
 " Add plugins to &runtimepath

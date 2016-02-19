@@ -48,9 +48,12 @@ autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
 " ======= Syntastic ==================
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby'],'passive_filetypes': ['python'] }
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
-
+" we want to tell the syntastic module when to run
+" we want to see code highlighting and checks when  we open a file
+" but we don't care so much that it reruns when we close the file
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ======= EasyMotion ================
 nmap s <Plug>(easymotion-s2)
@@ -85,6 +88,17 @@ let NERDTreeMapOpenVSplit='v'
 
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+" Open go doc in vertical window, horizontal, or tab
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
+au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+
+let g:neocomplete#enable_at_startup = 1
+" Plugin key-mappings.
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
 
 set shell=/bin/bash
 
