@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 " ======== Project ===========
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'dyng/ctrlsf.vim'
 
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'

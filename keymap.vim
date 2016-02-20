@@ -109,8 +109,8 @@ if has("user_commands")
 endif
 
 " Faster scroll
-nnoremap <silent> <c-f> 5<c-e>
-nnoremap <silent> <c-d> 5<c-y>
+" nnoremap <silent> <c-f> 5<c-e>
+" nnoremap <silent> <c-d> 5<c-y>
 
 " Copy line
 nmap çç yyp
@@ -128,3 +128,11 @@ inoremap JJ <Esc>o
 " Dash
 nmap <silent> <leader>f <Plug>DashSearch
 
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>

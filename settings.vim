@@ -54,7 +54,7 @@ nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 " but we don't care so much that it reruns when we close the file
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:go_fmt_fail_silently = 1
 " ======= EasyMotion ================
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
@@ -89,12 +89,8 @@ let NERDTreeMapOpenVSplit='v'
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
-" Open go doc in vertical window, horizontal, or tab
-au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
-au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
-au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
-
 let g:neocomplete#enable_at_startup = 1
+set completeopt-=preview
 " Plugin key-mappings.
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -129,3 +125,4 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+
