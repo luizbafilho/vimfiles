@@ -20,10 +20,15 @@ Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
+
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
+
 Plug 'airblade/vim-gitgutter'
+
+Plug 'tpope/vim-repeat' "Dependency for vim-easyclip
+Plug 'svermeulen/vim-easyclip'
 
 " ====== Languages ==========
 Plug 'fatih/vim-go'
