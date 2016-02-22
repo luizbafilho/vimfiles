@@ -9,6 +9,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
+Plug 'tpope/vim-obsession' " Dependency for vim-prosession
+Plug 'dhruvasagar/vim-prosession'
 
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
