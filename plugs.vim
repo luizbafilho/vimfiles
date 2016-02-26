@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'szw/vim-maximizer'
 
 " ======== Project ===========
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -28,10 +29,6 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
 Plug 'airblade/vim-gitgutter'
-
-Plug 'tpope/vim-repeat' "Dependency for vim-easyclip
-Plug 'svermeulen/vim-easyclip'
-
 " ====== Languages ==========
 Plug 'fatih/vim-go'
 " Add plugins to &runtimepath

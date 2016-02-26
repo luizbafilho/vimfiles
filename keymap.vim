@@ -136,3 +136,7 @@ nmap     <C-F>p <Plug>CtrlSFPwordPath
 nnoremap <C-F>o :CtrlSFOpen<CR>
 nnoremap <C-F>t :CtrlSFToggle<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
+
+nnoremap <silent>mm :MaximizerToggle<CR>
+vnoremap <silent>mm :MaximizerToggle<CR>gv
+inoremap <silent>mm <C-o>:MaximizerToggle<CR>
