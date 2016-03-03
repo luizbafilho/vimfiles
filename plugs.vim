@@ -12,7 +12,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-obsession' " Dependency for vim-prosession
 Plug 'dhruvasagar/vim-prosession'
-
+Plug 'ludovicchabant/vim-gutentags'
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
 Plug 'Lokaltog/vim-easymotion'

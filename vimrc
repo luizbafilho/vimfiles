@@ -31,8 +31,6 @@ syntax on
 " the plugins.
 let mapleader=","
 
-" =============== Keymapping Initialization ==========
-so ~/.vim/keymap.vim
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim
 " Use Vundle plugin to manage all other plugins
@@ -107,3 +105,7 @@ set sidescroll=1
 
 " ================ Custom Settings ========================
 so ~/.vim/settings.vim
+
+" =============== Keymapping Initialization ==========
+so ~/.vim/keymap.vim
+
