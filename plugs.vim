@@ -23,7 +23,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-
+Plug 'kana/vim-textobj-user' "Dependency for vim-textobj-rubyblock
+Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'

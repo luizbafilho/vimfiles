@@ -9,7 +9,7 @@ set background=dark
 colorscheme monokai
 set mouse=a
 set clipboard=unnamed
-
+runtime macros/matchit.vim
 if has("gui_running")
     set guioptions-=T " no toolbar
     set guioptions-=m " no menus
