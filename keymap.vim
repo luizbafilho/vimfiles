@@ -142,7 +142,7 @@ vnoremap <silent>mm :MaximizerToggle<CR>gv
 inoremap <silent>mm <C-o>:MaximizerToggle<CR>
 
 " VIM-GO keymappings
-au FileType go nmap <Leader>gdf <Plug>(go-def)
+au FileType go nmap t <Plug>(go-def)
 au FileType go nmap <Leader>gds <Plug>(go-def-split)
 au FileType go nmap <Leader>gdv <Plug>(go-def-vertical)
 
@@ -153,5 +153,4 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
 au FileType go nmap <Leader>i <Plug>(go-info)
 
-
-nmap <Leader>tb :TagbarToggle<CR>
+au FileType go nmap <F8> :TagbarToggle<CR>
