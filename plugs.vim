@@ -12,7 +12,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-obsession' " Dependency for vim-prosession
 Plug 'dhruvasagar/vim-prosession'
-
+Plug 'ludovicchabant/vim-gutentags'
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
 Plug 'Lokaltog/vim-easymotion'
@@ -23,7 +23,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-
+Plug 'kana/vim-textobj-user' "Dependency for vim-textobj-rubyblock
+Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
