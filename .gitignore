@@ -1,5 +1,5 @@
 bundle
-tags
+tags*
 *~
 *.swp
 .VimballRecord

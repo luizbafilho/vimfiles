@@ -88,6 +88,8 @@ let NERDTreeMapOpenVSplit='v'
 
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:syntastic_enable_elixir_checker = 1
+let g:syntastic_elixir_checkers = ['elixir']
 
 let g:neocomplete#enable_at_startup = 1
 set completeopt-=preview

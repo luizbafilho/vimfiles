@@ -25,12 +25,12 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-textobj-user' "Dependency for vim-textobj-rubyblock
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
+Plug 'Valloric/YouCompleteMe'
 
 Plug 'airblade/vim-gitgutter'
 " ====== Languages ==========
 Plug 'fatih/vim-go'
+Plug 'elixir-lang/vim-elixir'
+Plug 'kchmck/vim-coffee-script'
 " Add plugins to &runtimepath
 call plug#end()

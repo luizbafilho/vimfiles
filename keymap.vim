@@ -32,8 +32,8 @@ nmap <leader>q :q!<CR>
 nmap <leader>w :w!<CR>
 
 " Switch between / delete buffers
-noremap <M-tab> :bn<CR>
-noremap <S-tab> :bp<CR>
+noremap <S-l> :bn<CR>
+noremap <S-h> :bp<CR>
 nmap <leader>d :BD<CR>
 nmap <leader>D :bufdo bd<CR>
 
