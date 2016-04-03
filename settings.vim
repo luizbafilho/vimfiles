@@ -67,11 +67,6 @@ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
 " CTRL P
 let g:ctrlp_custom_ignore = 'deps\|_build'
 
@@ -85,11 +80,6 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 
 let NERDTreeMapOpenVSplit='v'
-
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:syntastic_enable_elixir_checker = 1
-let g:syntastic_elixir_checkers = ['elixir']
 
 let g:neocomplete#enable_at_startup = 1
 set completeopt-=preview
