@@ -1,12 +1,9 @@
 " ========= Appearance ================
 set t_Co=256
 
-if !has("gui_running")
-   let g:gruvbox_italic=0
-endif
-
 set background=dark
-colorscheme monokai
+color dracula
+" let g:airline_theme='base16_monokai'
 set mouse=a
 set clipboard=unnamed
 runtime macros/matchit.vim
@@ -48,7 +45,8 @@ autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
 " ======= Syntastic ==================
-nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+nnoremap <Leader>e :SyntasticCheck<CR>
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
 " we want to tell the syntastic module when to run
 " we want to see code highlighting and checks when  we open a file
 " but we don't care so much that it reruns when we close the file
@@ -68,7 +66,7 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " CTRL P
-let g:ctrlp_custom_ignore = 'deps\|_build'
+let g:ctrlp_custom_ignore = 'deps\|_build\|vendor'
 
 " Vim Go
 let g:go_highlight_functions = 1
@@ -119,3 +117,5 @@ let g:tagbar_type_go = {
     \ }
 
 nnoremap <C-tab> :tabnext<CR>
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1

@@ -5,6 +5,8 @@ Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'szw/vim-maximizer'
+Plug 'luizbafilho/dracula-theme', {'rtp': 'vim/'}
+Plug 'edkolev/tmuxline.vim'
 
 " ======== Project ===========
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -13,6 +15,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-obsession' " Dependency for vim-prosession
 Plug 'dhruvasagar/vim-prosession'
 Plug 'ludovicchabant/vim-gutentags'
+
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
 Plug 'Lokaltog/vim-easymotion'
@@ -26,6 +29,7 @@ Plug 'majutsushi/tagbar'
 Plug 'kana/vim-textobj-user' "Dependency for vim-textobj-rubyblock
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'Valloric/YouCompleteMe'
+Plug 'jgdavey/tslime.vim'
 
 Plug 'airblade/vim-gitgutter'
 " ====== Languages ==========

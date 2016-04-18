@@ -3,11 +3,14 @@
 " ----------
 let mapleader = ","
 
+:nnoremap <Leader>r :call Send_to_Tmux("go build -o bin/fusis \n")<CR>
+:nnoremap gt :call Send_to_Tmux("go test \n")<CR>
+
 imap jk <ESC>
 nnoremap ; :
 
 " Paste mode
-set pastetoggle=<F2>
+set pastetoggle=<Leader>p
 
 " Search
 nmap <Space> /
@@ -124,6 +127,12 @@ inoremap II <Esc>I
 inoremap AA <Esc>A
 inoremap OO <Esc>O
 inoremap JJ <Esc>o
+
+" Moving in insert mode
+inoremap <A-h> <C-o>h
+inoremap <A-j> <C-o>j
+inoremap <A-k> <C-o>k
+inoremap <A-l> <C-o>l
 
 " Dash
 nmap <silent> <leader>f <Plug>DashSearch
