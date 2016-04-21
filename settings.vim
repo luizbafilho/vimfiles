@@ -2,8 +2,8 @@
 set t_Co=256
 
 set background=dark
-color dracula
-" let g:airline_theme='base16_monokai'
+set nohlsearch
+color monokai
 set mouse=a
 set clipboard=unnamed
 runtime macros/matchit.vim
@@ -22,6 +22,11 @@ if has("gui_running")
       set guifont=Meslo\ LG\ M\ Regular\ for\ Powerline:h15
     endif
 endif
+
+" NEOVIM
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+autocmd! BufWritePost * Neomake
+let g:deoplete#enable_at_startup = 1
 
 " ========= NERDTree =================
 let NERDTreeIgnore = ['\.pyc$']
@@ -45,17 +50,21 @@ autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
 " ======= Syntastic ==================
-nnoremap <Leader>e :SyntasticCheck<CR>
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
-" we want to tell the syntastic module when to run
-" we want to see code highlighting and checks when  we open a file
-" but we don't care so much that it reruns when we close the file
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:go_fmt_fail_silently = 1
+" nnoremap <Leader>e :SyntasticCheck<CR>
+" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:go_fmt_fail_silently = 1
 " ======= EasyMotion ================
-nmap s <Plug>(easymotion-s2)
-nmap t <Plug>(easymotion-t2)
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 
 " ====== YankRing ===================
 nmap <Leader>c :YRShow<CR>

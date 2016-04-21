@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 " On-demand loading
 " ======== Interface ==========
-Plug 'crusoexia/vim-monokai'
+Plug 'luizbafilho/vim-monokai'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'szw/vim-maximizer'
@@ -28,8 +29,15 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-textobj-user' "Dependency for vim-textobj-rubyblock
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'jgdavey/tslime.vim'
+
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'benekastah/neomake'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'airblade/vim-gitgutter'
 " ====== Languages ==========
