@@ -162,3 +162,7 @@ au FileType go nmap <F8> :TagbarToggle<CR>
 
 " Vim tags
 au FileType ruby nnoremap t <C-]>
+
+if has('nvim')
+  nmap <BS> <C-W>h
+endif
