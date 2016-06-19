@@ -3,6 +3,7 @@
 set nocompatible
 scriptencoding utf-8
 set encoding=utf-8
+set termguicolors
 
 " ================ General Config ====================
 set t_ut=
