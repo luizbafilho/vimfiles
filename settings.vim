@@ -41,9 +41,9 @@ let g:deoplete#enable_at_startup = 1
 let NERDTreeIgnore = ['\.pyc$']
 
 " ========= Vim Airline ===============
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-set laststatus=2
+" let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" set laststatus=2
 
 " ======== Folding ====================
 set foldmethod=indent   "fold based on indent
@@ -106,37 +106,10 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 
 set shell=/bin/bash
 
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-    \ }
-
 nnoremap <C-tab> :tabnext<CR>
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
 hi TabLineFill gui=none guifg=#E8E8E3 guibg=#2D2E27
 hi TabLineSel  gui=none guifg=black guibg=#E6DB74
+

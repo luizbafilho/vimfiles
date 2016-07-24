@@ -6,6 +6,7 @@ set encoding=utf-8
 set termguicolors
 
 " ================ General Config ====================
+set laststatus=0
 set t_ut=
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode

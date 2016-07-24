@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'drmingdrmer/vim-tabbar'
 Plug 'crusoexia/vim-monokai'
 Plug 'szw/vim-maximizer'
-Plug 'luizbafilho/dracula-theme', {'rtp': 'vim/'}
+
 
 " ======== Project ===========
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
