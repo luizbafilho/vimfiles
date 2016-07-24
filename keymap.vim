@@ -147,8 +147,6 @@ nnoremap <C-F>t :CtrlSFToggle<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 nnoremap <silent>mm :MaximizerToggle<CR>
-vnoremap <silent>mm :MaximizerToggle<CR>gv
-inoremap <silent>mm <C-o>:MaximizerToggle<CR>
 
 " VIM-GO keymappings
 au FileType go nmap t <Plug>(go-def)

@@ -4,6 +4,7 @@ set t_Co=256
 set background=dark
 set nohlsearch
 color monokai
+set cursorline
 set mouse=a
 set clipboard=unnamed
 runtime macros/matchit.vim
@@ -136,3 +137,6 @@ let g:tagbar_type_go = {
 nnoremap <C-tab> :tabnext<CR>
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
+
+hi TabLineFill gui=none guifg=#E8E8E3 guibg=#2D2E27
+hi TabLineSel  gui=none guifg=black guibg=#E6DB74
