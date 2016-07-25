@@ -94,6 +94,9 @@ set shell=/bin/bash
 hi TabLineFill gui=none guifg=#E8E8E3 guibg=#2D2E27
 hi TabLineSel  gui=none guifg=black guibg=#E6DB74
 
+hi TabLineFill cterm=none ctermfg=252 ctermbg=235
+hi TabLineSel  cterm=none ctermfg=black ctermbg=186
+
 let g:sneak#streak = 1
 let g:sneak#s_next = 1
 let g:sneak#absolute_dir = 1
