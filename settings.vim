@@ -40,9 +40,6 @@ let g:deoplete#enable_at_startup = 1
 " ========= NERDTree =================
 let NERDTreeIgnore = ['\.pyc$']
 
-" ========= Vim Airline ===============
-" let g:airline_powerline_fonts = 1
-" let g:airline#extensions#tabline#enabled = 1
 " set laststatus=2
 
 " ======== Folding ====================
@@ -58,30 +55,16 @@ autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
-" ======= Syntastic ==================
-" nnoremap <Leader>e :SyntasticCheck<CR>
-" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:go_fmt_fail_silently = 1
 " ======= EasyMotion ================
-nmap s <Plug>(easymotion-overwin-f2)
+" nmap s <Plug>(easymotion-overwin-f2)
 
 " Turn on case insensitive feature
-let g:EasyMotion_smartcase = 1
+" let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
-
-" ====== YankRing ===================
-nmap <Leader>c :YRShow<CR>
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " CTRL P
 let g:ctrlp_custom_ignore = 'deps\|_build\|vendor'
@@ -94,6 +77,7 @@ let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
+let g:go_fmt_fail_silently = 1
 
 let NERDTreeMapOpenVSplit='v'
 
@@ -106,10 +90,18 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 
 set shell=/bin/bash
 
-nnoremap <C-tab> :tabnext<CR>
-let g:tslime_always_current_session = 1
-let g:tslime_always_current_window = 1
-
+" Tabline colors
 hi TabLineFill gui=none guifg=#E8E8E3 guibg=#2D2E27
 hi TabLineSel  gui=none guifg=black guibg=#E6DB74
 
+let g:sneak#streak = 1
+let g:sneak#s_next = 1
+let g:sneak#absolute_dir = 1
+let g:sneak#use_ic_scs = 1
+
+nmap f <Plug>Sneak_s
+nmap F <Plug>Sneak_S
+xmap f <Plug>Sneak_s
+xmap F <Plug>Sneak_S
+omap f <Plug>Sneak_s
+omap F <Plug>Sneak_S

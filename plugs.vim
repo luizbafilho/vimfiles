@@ -5,7 +5,6 @@ Plug 'drmingdrmer/vim-tabbar'
 Plug 'crusoexia/vim-monokai'
 Plug 'szw/vim-maximizer'
 
-
 " ======== Project ===========
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
@@ -16,7 +15,7 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " ======= Vim improvments ===
 Plug 'vim-scripts/bufkill.vim'
-Plug 'Lokaltog/vim-easymotion'
+Plug 'justinmk/vim-sneak'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'

@@ -20,8 +20,6 @@ vnoremap / /\v
 " Insert blank line in normal mode
 nmap <CR> o<Esc>
 
-" Ag Search
-nmap <leader>a :Ag
 " Rotating among results
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
@@ -30,7 +28,7 @@ map <C-p> :cp<CR>
 nnoremap <leader><space> :noh<cr>
 
 " Saving and buffer stuff
-nmap <leader><ESC> :wqa!<CR>
+" nmap <leader><ESC> :wqa!<CR>
 nmap <leader>q :q!<CR>
 nmap <leader>w :w!<CR>
 
