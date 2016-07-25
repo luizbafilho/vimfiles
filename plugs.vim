@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 " On-demand loading
 " ======== Interface ==========
 Plug 'drmingdrmer/vim-tabbar'
@@ -30,7 +30,8 @@ Plug 'benekastah/neomake'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'airblade/vim-gitgutter'
 " ====== Languages ==========
-Plug 'fatih/vim-go'
-Plug 'elixir-lang/vim-elixir'
+Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 " Add plugins to &runtimepath
 call plug#end()

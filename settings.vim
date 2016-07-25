@@ -99,9 +99,11 @@ let g:sneak#s_next = 1
 let g:sneak#absolute_dir = 1
 let g:sneak#use_ic_scs = 1
 
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
+nmap <leader>g <Plug>Sneak_s
+nmap <leader>G <Plug>Sneak_S
+xmap <leader>g <Plug>Sneak_s
+xmap <leader>G <Plug>Sneak_S
+omap <leader>g <Plug>Sneak_s
+omap <leader>G <Plug>Sneak_S
+
+let g:alchemist_tag_map = 't'
