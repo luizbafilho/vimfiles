@@ -3,7 +3,7 @@ set t_Co=256
 
 set background=dark
 set nohlsearch
-color monokai
+silent! color monokai
 set cursorline
 set mouse=a
 set clipboard=unnamed
