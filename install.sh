@@ -23,6 +23,7 @@ case "$(uname -s)" in
     ;;
 esac
 
+pip3 install neovim
 
 echo "====> Downloading vimfiles"
 mkdir ~/.config
