@@ -3,9 +3,6 @@
 " ----------
 let mapleader = ","
 
-:nnoremap <Leader>r :call Send_to_Tmux("go build -o bin/fusis \n")<CR>
-:nnoremap gt :call Send_to_Tmux("go test \n")<CR>
-
 imap jk <ESC>
 nnoremap ; :
 
