@@ -89,6 +89,8 @@ smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
 let g:go_snippet_engine = "neosnippet"
 
+let g:neosnippet#snippets_directory='~/.config/nvim/plugged/vim-go/gosnippets/snippets'
+
 set shell=/bin/bash
 
 " Tabline colors
