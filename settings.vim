@@ -6,7 +6,7 @@ set nohlsearch
 silent! color monokai
 set cursorline
 set mouse=a
-set clipboard=unnamed
+set clipboard+=unnamedplus
 runtime macros/matchit.vim
 if has("gui_running")
     set guioptions-=T " no toolbar
@@ -87,6 +87,7 @@ set completeopt-=preview
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
+let g:go_snippet_engine = "neosnippet"
 
 set shell=/bin/bash
 

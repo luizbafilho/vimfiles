@@ -29,6 +29,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'airblade/vim-gitgutter'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+
 " ====== Languages ==========
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
