@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
+Plug 'easymotion/vim-easymotion'
 
 function! DoRemote(arg)
   UpdateRemotePlugins

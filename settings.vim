@@ -56,10 +56,10 @@ autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace"
 
 " ======= EasyMotion ================
-" nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-overwin-f2)
 
 " Turn on case insensitive feature
-" let g:EasyMotion_smartcase = 1
+let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
@@ -111,3 +111,11 @@ omap <leader>g <Plug>Sneak_s
 omap <leader>G <Plug>Sneak_S
 
 let g:alchemist_tag_map = 't'
+
+
+function Multiple_cursors_before()
+  let g:deoplete#disable_auto_complete = 1
+endfunction
+function Multiple_cursors_after()
+  let g:deoplete#disable_auto_complete = 0
+endfunction
