@@ -4,9 +4,9 @@ These are the new Codegram vimfiles!
 
 ## Installing
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/luizbafilho/vimfiles/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/luizbafilho/vimfiles/master/install.sh)"
 
-    Open Neovim
+Open Neovim
 
-    :PlugInstall
+:PlugInstall
 
